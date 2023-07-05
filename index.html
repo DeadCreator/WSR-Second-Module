@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Balloons</title>
+</head>
+<body>
+    <section id="start">
+        <h2 class="title">Balloons</h2>
+        <label for="name">
+            Your name
+            <input type="text" required placeholder="Jack" id="name">
+        </label>
+        <button id="start-game">Play</button>
+    </section>
+    <section id="game">
+        <div class="info">
+            <h3 id="score">Current score: 0</h3>
+            <h3 id="user">User: Jack</h3>
+            <h3 id="timer">Time left: 01:00</h3>
+            <div class="best">
+                <h3 id="best-score">Score: 0</h3>
+                <h3 id="best-user">User: Jack</h3>
+            </div>
+        </div>
+        <div id="game-field">
+        </div>
+    </section>
+    <section id="end" class="hide-window">
+        <div id="attempts"></div>
+        <button id="restart-game">Play Again</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

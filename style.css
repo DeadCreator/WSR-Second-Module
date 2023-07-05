@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#start {
+    background-color: aqua;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#start h2 {
+    margin-bottom: 15vh;
+    font-size: 4vw;
+}
+
+#start label,
+#start button {
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    width: 50vw;
+}
+
+#start label input {
+    font-size: 3vw;
+    padding: 2vh;
+    margin-top: 2vh;
+}
+
+#start button,
+#end button {
+    margin-top: 4vh;
+    padding: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+#game,
+#end {
+    display: flex;
+    flex-direction: column;
+}
+
+#end {
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    height: 10vh;
+    background-color: lime;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 3vh;
+}
+
+.info * {
+    justify-self: flex-end;
+    font-size: 3vw;
+}
+
+.best {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    justify-self: flex-start;
+}
+
+
+.hide-window {
+    left: -100%;
+    transition: left 1s;
+}
+
+
+#game-field {
+    position: relative;
+    height: 100%;
+}
+
+.balloon {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+
+.orange {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+}
+
+.green {
+    background-color: green;
+    width: 75px;
+    height: 75px;
+}
+
+.brown {
+    background-color: brown;
+    width: 10px;
+    height: 10px;
+}
